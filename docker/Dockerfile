@@ -63,7 +63,7 @@ RUN export USE_CUDA=1
 
 ARG CUDA_VERSION=""
 
-RUN git clone --depth 1 https://github.com/pytorch/serve.git
+RUN git clone --depth 1 --branch "affinda/torch-1.13" https://github.com/cfculhane/serve.git
 
 WORKDIR "serve"
 
